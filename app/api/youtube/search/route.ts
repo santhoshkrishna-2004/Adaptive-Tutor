@@ -1,8 +1,8 @@
 import { NextResponse } from "next/server"
 
 // Updated YouTube API key
-const YOUTUBE_API_KEY = "AIzaSyDhEh1qZCnOJ329oC4x6W3jD_G44WvGlpc"
-const YOUTUBE_API_URL = "https://www.googleapis.com/youtube/v3"
+const YOUTUBE_API_KEY = "YOUR_API_KEY"
+const YOUTUBE_API_URL = "https://www.googleapis.com/youtube/v"
 
 // Enhanced fallback educational videos
 const fallbackVideos = [
