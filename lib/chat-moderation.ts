@@ -1,5 +1,5 @@
 interface MutedUser {
-  userId: string
+  userId: string 
   userName: string
   mutedBy: string
   reason: string
