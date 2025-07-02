@@ -1,7 +1,7 @@
 # 🎓 ADAPTIVE AI TUTOR
 
 <div align="center">
-
+   
 **Transform Learning with Personalized, Intelligent Innovation**
 
 *Revolutionizing education through adaptive AI technology that makes learning engaging, personalized, and stress-free*
