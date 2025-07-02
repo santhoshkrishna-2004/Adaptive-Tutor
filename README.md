@@ -2,10 +2,6 @@
 
 <div align="center">
 
-![TypeScript](https://img.shields.io/badge/TypeScript-97.6%25-blue?style=for-the-badge&logo=typescript)
-![Last Commit](https://img.shields.io/badge/Last%20Commit-Today-brightgreen?style=for-the-badge)
-![Languages](https://img.shields.io/badge/Languages-3-orange?style=for-the-badge)
-
 **Transform Learning with Personalized, Intelligent Innovation**
 
 *Revolutionizing education through adaptive AI technology that makes learning engaging, personalized, and stress-free*
@@ -126,49 +122,11 @@ npm test
 
 ## 👥 **Team Roles & Responsibilities**
 
-### 🎯 **Project Lead & Full-Stack Developer**
-- **Name**: Santhosh Krishna
-- **GitHub**: [@santhoshkrishna-2004](https://github.com/santhoshkrishna-2004)
-- **Responsibilities**:
-  - Overall project architecture and strategy
-  - Full-stack development and integration
-  - Code quality assurance and reviews
-  - Performance optimization and deployment
-
-### 🤖 **AI/ML Engineer**
-- **Responsibilities**:
-  - AI-powered tutoring algorithm development
-  - Natural language processing for chatbot
-  - Machine learning model training and optimization
-  - Personalization engine implementation
-
-### 🎨 **UI/UX Designer**
-- **Responsibilities**:
-  - User interface design and prototyping
-  - User experience research and testing
-  - Design system maintenance
-  - Accessibility compliance
-
-### 📊 **Data Analyst**
-- **Responsibilities**:
-  - Learning analytics and insights
-  - Performance metrics tracking
-  - Data visualization and reporting
-  - A/B testing and optimization
-
-### 🔧 **DevOps Engineer**
-- **Responsibilities**:
-  - CI/CD pipeline management
-  - Infrastructure setup and maintenance
-  - Security implementation
-  - Monitoring and logging systems
-
-### 🧪 **Quality Assurance Engineer**
-- **Responsibilities**:
-  - Test strategy and implementation
-  - Automated testing frameworks
-  - Bug tracking and resolution
-  - Performance testing
+| Team Member | Role | Key Responsibilities |
+|-------------|------|---------------------|
+| **Santosh** | Frontend Developer & UI/UX Lead | • User interface design and development<br>• User experience research and optimization<br>• Frontend architecture and component development<br>• Design system implementation<br>• Responsive design and accessibility |
+| **Vamshi** | Backend Developer & AI Logic Specialist | • Backend API development and integration<br>• AI-powered tutoring algorithm implementation<br>• Machine learning model development<br>• Database design and optimization<br>• AI chatbot logic and natural language processing |
+| **Radhika** | System Architect & Testing Lead | • Overall system architecture design<br>• Testing strategy and implementation<br>• Code quality assurance and reviews<br>• Performance optimization and scalability<br>• Integration testing and deployment strategies |
 
 ## 🎯 **Core Benefits**
 
@@ -212,11 +170,10 @@ npm test
 
 ## 📊 **Project Metrics**
 
-- **TypeScript Coverage**: 97.6%
-- **Active Development**: Daily commits
 - **Component Architecture**: Modular and reusable
 - **Performance**: Optimized for speed and efficiency
 - **Accessibility**: WCAG 2.1 compliant
+- **Active Development**: Continuous integration and deployment
 
 ## 🎨 **Design Philosophy**
 
@@ -245,9 +202,9 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 📞 **Contact & Support**
 
-- **Project Repository**: [GitHub](https://github.com/santhoshkrishna-2004/Adaptive-Tutor)
-- **Issues & Bug Reports**: [GitHub Issues](https://github.com/santhoshkrishna-2004/Adaptive-Tutor/issues)
-- **Discussions**: [GitHub Discussions](https://github.com/santhoshkrishna-2004/Adaptive-Tutor/discussions)
+- **Issues & Bug Reports**: Create an issue in the repository
+- **Feature Requests**: Submit through project discussions
+- **Technical Support**: Contact the development team
 
 ---
 
