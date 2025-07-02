@@ -1,0 +1,567 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+    --primary: 221.2 83.2% 53.3%;
+    --primary-foreground: 210 40% 98%;
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 221.2 83.2% 53.3%;
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+    --primary: 217.2 91.2% 59.8%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 224.3 76.3% 48%;
+  }
+
+  .warm {
+    --background: 40 36% 96%;
+    --foreground: 30 10% 15%;
+    --card: 40 36% 96%;
+    --card-foreground: 30 10% 15%;
+    --popover: 40 36% 96%;
+    --popover-foreground: 30 10% 15%;
+    --primary: 25 95% 53%;
+    --primary-foreground: 40 36% 96%;
+    --secondary: 30 20% 90%;
+    --secondary-foreground: 30 10% 15%;
+    --muted: 30 20% 90%;
+    --muted-foreground: 30 10% 40%;
+    --accent: 30 20% 90%;
+    --accent-foreground: 30 10% 15%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 40 36% 96%;
+    --border: 30 20% 85%;
+    --input: 30 20% 85%;
+    --ring: 25 95% 53%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+/* Educational Learning Backgrounds */
+.learning-bg-books {
+  background-image: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)),
+    url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%234f46e5' fill-opacity='0.1'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  background-size: 60px 60px;
+}
+
+.learning-bg-graduation {
+  background-image: linear-gradient(rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)),
+    url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%2306b6d4' fill-opacity='0.1' fill-rule='evenodd'%3E%3Cpath d='M20 20c0-11.046-8.954-20-20-20v20h20zM0 20v20c11.046 0 20-8.954 20-20H0z'/%3E%3C/g%3E%3C/svg%3E");
+  background-size: 40px 40px;
+}
+
+.learning-bg-science {
+  background-image: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)),
+    url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%2310b981' fill-opacity='0.15' fill-rule='evenodd'%3E%3Ccircle cx='3' cy='3' r='3'/%3E%3Ccircle cx='13' cy='13' r='3'/%3E%3C/g%3E%3C/svg%3E");
+  background-size: 20px 20px;
+}
+
+.learning-bg-math {
+  background-image: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)),
+    url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23f59e0b' fill-opacity='0.1'%3E%3Cpath d='M0 0h60v60H0V0zm30 30h30v30H30V30zM0 30h30v30H0V30z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  background-size: 60px 60px;
+}
+
+.learning-bg-computer {
+  background-image: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)),
+    url("data:image/svg+xml,%3Csvg width='64' height='64' viewBox='0 0 64 64' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M8 16c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8zm0-2c3.314 0 6-2.686 6-6s-2.686-6-6-6-6 2.686-6 6 2.686 6 6 6zm33.414-6l5.95-5.95L45.95.636 40 6.586 34.05.636 32.636 2.05 38.586 8l-5.95 5.95 1.414 1.414L40 9.414l5.95 5.95 1.414-1.414L41.414 8zM40 48c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8zm0-2c3.314 0 6-2.686 6-6s-2.686-6-6-6-6 2.686-6 6 2.686 6 6 6zM9.414 40l5.95-5.95-1.414-1.414L8 38.586l-5.95-5.95L.636 34.05 6.586 40l-5.95 5.95 1.414 1.414L8 41.414l5.95 5.95 1.414-1.414L9.414 40z' fill='%236366f1' fill-opacity='0.1' fill-rule='evenodd'/%3E%3C/svg%3E");
+  background-size: 64px 64px;
+}
+
+.learning-bg-engineering {
+  background-image: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)),
+    url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23dc2626' fill-opacity='0.1' fill-rule='evenodd'%3E%3Cpath d='M0 40L40 0H20L0 20M40 40V20L20 40'/%3E%3C/g%3E%3C/svg%3E");
+  background-size: 40px 40px;
+}
+
+.learning-bg-library {
+  background-image: linear-gradient(rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)),
+    url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23059669' fill-opacity='0.08'%3E%3Cpath d='M0 0h80v80H0V0zm20 20v40h40V20H20zm20 35a15 15 0 1 1 0-30 15 15 0 0 1 0 30z' fill-rule='evenodd'/%3E%3C/g%3E%3C/svg%3E");
+  background-size: 80px 80px;
+}
+
+.learning-bg-classroom {
+  background-image: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)),
+    url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%237c3aed' fill-opacity='0.08'%3E%3Cpath d='M0 0h100v100H0V0zm50 50a40 40 0 1 1 0-80 40 40 0 0 1 0 80zm0-70a30 30 0 1 0 0 60 30 30 0 0 0 0-60z' fill-rule='evenodd'/%3E%3C/g%3E%3C/svg%3E");
+  background-size: 100px 100px;
+}
+
+.learning-bg-study {
+  background-image: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)),
+    url("data:image/svg+xml,%3Csvg width='52' height='26' viewBox='0 0 52 26' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ec4899' fill-opacity='0.1'%3E%3Cpath d='M10 10c0-2.21-1.79-4-4-4s-4 1.79-4 4 1.79 4 4 4 4-1.79 4-4zm32 16c0-2.21-1.79-4-4-4s-4 1.79-4 4 1.79 4 4 4 4-1.79 4-4zM0 0h52v26H0V0zm26 13c0-7.18-5.82-13-13-13S0 5.82 0 13s5.82 13 13 13 13-5.82 13-13z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  background-size: 52px 26px;
+}
+
+/* NEW ANIMATED BACKGROUNDS */
+
+/* 1. Rainbow Gradient Animation */
+.learning-bg-animated {
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradientShift 15s ease infinite;
+}
+
+/* 2. Matrix Code Rain */
+.learning-bg-matrix {
+  background: linear-gradient(135deg, #0f0f23 0%, #1a1a2e 50%, #16213e 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+/* 3. Floating Geometric Shapes */
+.learning-bg-geometric {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+/* 4. Particle System */
+.learning-bg-particles {
+  background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+/* 5. DNA Helix Animation */
+.learning-bg-dna {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+/* 6. Circuit Board Animation */
+.learning-bg-circuit {
+  background: linear-gradient(135deg, #0c0c0c 0%, #1a1a1a 50%, #2d2d2d 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+/* 7. Ocean Waves */
+.learning-bg-waves {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+/* 8. Space Stars */
+.learning-bg-space {
+  background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+/* 9. Aurora Borealis */
+.learning-bg-aurora {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+/* 10. Pulsing Brain Waves */
+.learning-bg-brainwaves {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+/* Animation Keyframes */
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(100vh) rotate(0deg);
+  }
+  100% {
+    transform: translateY(-100px) rotate(360deg);
+  }
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    opacity: 0.3;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.8;
+    transform: scale(1.1);
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes wave {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+@keyframes twinkle {
+  0%,
+  100% {
+    opacity: 0.3;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.2);
+  }
+}
+
+@keyframes circuit-pulse {
+  0%,
+  100% {
+    opacity: 0.2;
+  }
+  50% {
+    opacity: 0.8;
+  }
+}
+
+@keyframes aurora-wave {
+  0%,
+  100% {
+    transform: translateX(-50%) translateY(0px) rotate(0deg);
+  }
+  33% {
+    transform: translateX(-50%) translateY(-10px) rotate(1deg);
+  }
+  66% {
+    transform: translateX(-50%) translateY(5px) rotate(-1deg);
+  }
+}
+
+@keyframes brain-pulse {
+  0%,
+  100% {
+    transform: scaleY(1);
+    opacity: 0.3;
+  }
+  50% {
+    transform: scaleY(1.5);
+    opacity: 0.8;
+  }
+}
+
+/* Subject-specific backgrounds */
+.subject-computer-science {
+  background-image: linear-gradient(rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)),
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'%3E%3Cg fill='%234f46e5' fill-opacity='0.05'%3E%3Cpolygon points='50 0 60 40 100 50 60 60 50 100 40 60 0 50 40 40'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+.subject-mathematics {
+  background-image: linear-gradient(rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)),
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'%3E%3Cg fill='%23f59e0b' fill-opacity='0.05'%3E%3Cpath d='M25 25h50v50H25V25zm25 37.5a12.5 12.5 0 1 1 0-25 12.5 12.5 0 0 1 0 25z'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+.subject-physics {
+  background-image: linear-gradient(rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)),
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'%3E%3Cg fill='%2310b981' fill-opacity='0.05'%3E%3Ccircle cx='50' cy='50' r='40'/%3E%3Ccircle cx='50' cy='50' r='25'/%3E%3Ccircle cx='50' cy='50' r='10'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+.subject-chemistry {
+  background-image: linear-gradient(rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)),
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'%3E%3Cg fill='%23ec4899' fill-opacity='0.05'%3E%3Ccircle cx='20' cy='20' r='10'/%3E%3Ccircle cx='80' cy='20' r='10'/%3E%3Ccircle cx='50' cy='50' r='15'/%3E%3Ccircle cx='20' cy='80' r='10'/%3E%3Ccircle cx='80' cy='80' r='10'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+.subject-engineering {
+  background-image: linear-gradient(rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)),
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'%3E%3Cg fill='%23dc2626' fill-opacity='0.05'%3E%3Cpath d='M0 0h25v25H0V0zm25 25h25v25H25V25zm25 25h25v25H50V50zm25-25h25v25H75V25zm-50 50h25v25H25V75zm25 0h25v25H50V75z'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+/* PPT Theme Styles with backgrounds */
+.ppt-theme-professional {
+  background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+}
+
+.ppt-theme-creative {
+  background: linear-gradient(135deg, #fff7ed 0%, #ffedd5 100%);
+}
+
+.ppt-theme-minimal {
+  background: #ffffff;
+}
+
+.ppt-theme-academic {
+  background: linear-gradient(135deg, #eff6ff 0%, #dbeafe 100%);
+}
+
+.ppt-theme-modern {
+  background: linear-gradient(135deg, #f4f4f5 0%, #e4e4e7 100%);
+}
+
+/* Department background colors */
+.dept-computer-science {
+  background: linear-gradient(135deg, rgba(79, 70, 229, 0.1) 0%, rgba(99, 102, 241, 0.05) 100%);
+}
+
+.dept-electrical {
+  background: linear-gradient(135deg, rgba(245, 158, 11, 0.1) 0%, rgba(251, 191, 36, 0.05) 100%);
+}
+
+.dept-mechanical {
+  background: linear-gradient(135deg, rgba(16, 185, 129, 0.1) 0%, rgba(52, 211, 153, 0.05) 100%);
+}
+
+.dept-civil {
+  background: linear-gradient(135deg, rgba(99, 102, 241, 0.1) 0%, rgba(129, 140, 248, 0.05) 100%);
+}
+
+.dept-chemical {
+  background: linear-gradient(135deg, rgba(236, 72, 153, 0.1) 0%, rgba(244, 114, 182, 0.05) 100%);
+}
+
+/* Learning environment backgrounds */
+.learning-environment {
+  position: relative;
+  overflow: hidden;
+}
+
+.learning-environment::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: radial-gradient(circle at 25% 25%, rgba(79, 70, 229, 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 75% 75%, rgba(16, 185, 129, 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 75% 25%, rgba(245, 158, 11, 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 25% 75%, rgba(236, 72, 153, 0.1) 0%, transparent 50%);
+  pointer-events: none;
+  z-index: -1;
+}
+
+/* Floating elements animation */
+.floating-elements {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.floating-element {
+  position: absolute;
+  opacity: 0.1;
+  animation: float 20s infinite linear;
+}
+
+.floating-element:nth-child(1) {
+  left: 10%;
+  animation-delay: 0s;
+  animation-duration: 25s;
+}
+
+.floating-element:nth-child(2) {
+  left: 20%;
+  animation-delay: 5s;
+  animation-duration: 30s;
+}
+
+.floating-element:nth-child(3) {
+  left: 30%;
+  animation-delay: 10s;
+  animation-duration: 20s;
+}
+
+.floating-element:nth-child(4) {
+  left: 40%;
+  animation-delay: 15s;
+  animation-duration: 35s;
+}
+
+.floating-element:nth-child(5) {
+  left: 50%;
+  animation-delay: 20s;
+  animation-duration: 25s;
+}
+
+.floating-element:nth-child(6) {
+  left: 60%;
+  animation-delay: 25s;
+  animation-duration: 30s;
+}
+
+.floating-element:nth-child(7) {
+  left: 70%;
+  animation-delay: 30s;
+  animation-duration: 20s;
+}
+
+.floating-element:nth-child(8) {
+  left: 80%;
+  animation-delay: 35s;
+  animation-duration: 25s;
+}
+
+.floating-element:nth-child(9) {
+  left: 90%;
+  animation-delay: 40s;
+  animation-duration: 30s;
+}
+
+/* Animated background specific styles */
+.matrix-rain {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: -1;
+}
+
+.geometric-shapes {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: -1;
+}
+
+.dna-helix {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: -1;
+}
+
+.circuit-board {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: -1;
+}
+
+.ocean-waves {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: -1;
+}
+
+.space-stars {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: -1;
+}
+
+.aurora-lights {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: -1;
+}
+
+.brain-waves {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: -1;
+}
+
+/* Custom uploaded background */
+.learning-bg-custom {
+  background-image: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)),
+    url("/images/adaptive-ai-tutor-bg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+/* Make this the default attractive background */
+.learning-bg-default {
+  background-image: linear-gradient(rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.05)),
+    url("/images/adaptive-ai-tutor-bg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
